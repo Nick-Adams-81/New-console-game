@@ -1,7 +1,7 @@
-import Directions.East;
-import Directions.North;
-import Directions.South;
-import Directions.West;
+import LevelOneDirections.East;
+import LevelOneDirections.North;
+import LevelOneDirections.South;
+import LevelOneDirections.West;
 
 import java.util.Scanner;
 
@@ -30,13 +30,13 @@ public class LevelOne {
             } else {
                 System.out.println("please enter a valid response");
             }
-            System.out.println("try again?[y/n]");
+            System.out.println("try level one again?[y/n]");
             String res = scanner.nextLine();
             if(res.equalsIgnoreCase("Y")) {
                 confirm = true;
             } else {
                 confirm = false;
-                System.out.println("Thanks for playing!");
+                System.out.println("moving farther along your path!");
             }
 
         } while(confirm);

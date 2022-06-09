@@ -1,4 +1,4 @@
-package Directions;
+package LevelOneDirections;
 
 public class East {
 

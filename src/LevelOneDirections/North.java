@@ -1,4 +1,4 @@
-package Directions;
+package LevelOneDirections;
 
 public class North {
     public void north(String name) {

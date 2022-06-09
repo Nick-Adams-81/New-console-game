@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) {
 
         // new instances of classes
-
         LevelOne levelOne = new LevelOne();
+        LevelTwo levelTwo = new LevelTwo();
 
         // intro asking user for their name
         String name = "";
@@ -19,6 +19,7 @@ public class Main {
         String res = scanner.nextLine();
         if(res.equalsIgnoreCase("y")) {
             levelOne.levelOne(name);
+            levelTwo.levelTwo(name);
         } else {
             System.out.println("maybe next time!");
         }
