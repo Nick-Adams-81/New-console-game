@@ -1,8 +1,18 @@
+import Directions.East;
+import Directions.North;
+import Directions.South;
+import Directions.West;
+
 import java.util.Scanner;
 
 public class LevelOne {
 
     public void levelOne(String name) {
+        North north = new North();
+        South south = new South();
+        East east = new East();
+        West west = new West();
+
         boolean confirm;
         Scanner scanner = new Scanner(System.in);
         do {
@@ -10,13 +20,13 @@ public class LevelOne {
         String response = scanner.nextLine();
 
             if (response.equalsIgnoreCase("N")) {
-                System.out.println("North");
+                north.north(name);
             } else if (response.equalsIgnoreCase("S")) {
-                System.out.println("south");
+                south.south(name);
             } else if (response.equalsIgnoreCase("E")) {
-                System.out.println("east");
+                east.east(name);
             } else if (response.equalsIgnoreCase("W")) {
-                System.out.println("West");
+                west.west(name);
             } else {
                 System.out.println("please enter a valid response");
             }
