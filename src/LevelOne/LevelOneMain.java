@@ -17,12 +17,14 @@ public class LevelOneMain {
             System.out.println(name + ", You start your journey at a crossroads, you can go north, south, east, or west, which way will you go?[N/S/E/W]");
             String response = scanner.nextLine();
 
+            // paths through the level
             if (response.equalsIgnoreCase("N")) north.north(name, hero, heroAttackPoints, heroHealthPoints, potions);
             else if (response.equalsIgnoreCase("S")) south.south(name, hero, heroAttackPoints, heroHealthPoints, potions);
             else if (response.equalsIgnoreCase("E")) east.east(name, hero, heroAttackPoints, heroHealthPoints, potions);
             else if (response.equalsIgnoreCase("W")) west.west(name, hero, heroAttackPoints, heroHealthPoints, potions);
             else System.out.println("please enter a valid response");
 
+            // boss fight
             bossFight.bossFight();
 
             System.out.println("try level one again?[y/n]");
