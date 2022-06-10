@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class North {
     int guesses = 3;
 
-    public void north(String name, String hero, int heroHealthPoints, int heroAttackPoints, int potions) {
+    public void north(String name, String hero, int heroAttackPoints, int heroHealthPoints, int potions) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(name + ", you have decided to go north");
         System.out.println(name + " " + hero + " " + heroHealthPoints + " " + heroAttackPoints + " " + potions);
