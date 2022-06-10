@@ -18,6 +18,7 @@ public class Main {
         LevelOneMain levelOne = new LevelOneMain();
         LevelTwoMain levelTwo = new LevelTwoMain();
         Knight knight = new Knight();
+        Wizard wizard = new Wizard();
 
         // intro asking user for their name
         String name = "";
@@ -40,6 +41,7 @@ public class Main {
             heroHealthPoints = 100;
             potions = 2;
         } else if(heroResponse.equalsIgnoreCase("b")) {
+            System.out.println(wizard.wizard());
             hero = "Mage";
             heroAttackPoints = 60;
             heroHealthPoints = 85;
