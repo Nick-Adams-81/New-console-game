@@ -9,6 +9,7 @@ public class LevelOneMain {
         South south = new South();
         East east = new East();
         West west = new West();
+        LevelOneBossFight bossFight = new LevelOneBossFight();
 
         boolean confirm;
         Scanner scanner = new Scanner(System.in);
@@ -21,6 +22,8 @@ public class LevelOneMain {
             else if (response.equalsIgnoreCase("E")) east.east(name, hero, heroAttackPoints, heroHealthPoints, potions);
             else if (response.equalsIgnoreCase("W")) west.west(name, hero, heroAttackPoints, heroHealthPoints, potions);
             else System.out.println("please enter a valid response");
+
+            bossFight.bossFight();
 
             System.out.println("try level one again?[y/n]");
             String res = scanner.nextLine();
