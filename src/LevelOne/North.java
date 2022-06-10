@@ -28,7 +28,7 @@ public class North {
         if (guesses == 0) {
             heroHealthPoints -= 15;
             heroAttackPoints -= 15;
-            System.out.println("incorrect! your health is now:" + heroHealthPoints + ", and your attack is now:" + heroAttackPoints + ", better luck on the rest of your journey!");
+            System.out.println("You failed! your health is now:" + heroHealthPoints + ", and your attack is now:" + heroAttackPoints + ", better luck on the rest of your journey!");
         }
 
     }
