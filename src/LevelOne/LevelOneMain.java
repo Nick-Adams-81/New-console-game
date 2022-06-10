@@ -1,11 +1,8 @@
-import LevelOneDirections.East;
-import LevelOneDirections.North;
-import LevelOneDirections.South;
-import LevelOneDirections.West;
+package LevelOne;
 
 import java.util.Scanner;
 
-public class LevelOne {
+public class LevelOneMain {
 
     public void levelOne(String name, String hero, int heroAttackPoints, int heroHealthPoints, int potions) {
         North north = new North();

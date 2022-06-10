@@ -1,3 +1,6 @@
+import LevelOne.LevelOneMain;
+import LevelTwo.LevelTwoMain;
+
 import java.util.Scanner;
 
 public class Main {
@@ -12,8 +15,8 @@ public class Main {
 
         // new instances of classes
 
-        LevelOne levelOne = new LevelOne();
-        LevelTwo levelTwo = new LevelTwo();
+        LevelOneMain levelOne = new LevelOneMain();
+        LevelTwoMain levelTwo = new LevelTwoMain();
 
         // intro asking user for their name
         String name = "";

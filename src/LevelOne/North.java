@@ -1,4 +1,4 @@
-package LevelOneDirections;
+package LevelOne;
 
 import java.util.Scanner;
 
