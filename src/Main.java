@@ -21,6 +21,8 @@ public class Main {
         System.out.println("Whats your name?");
         name = scanner.nextLine();
         System.out.println("Hello " + name + ", nice to meet you!");
+
+        // choosing the players hero
         System.out.println(name + ", tell me what type of hero you are, would you be a...");
         System.out.println("a: Noble Knight, balance of health, attack, and magic");
         System.out.println("b: Wise Mage, master of the magic arts but weaker attacks and decent health");

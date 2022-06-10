@@ -20,7 +20,7 @@ public class LevelOne {
             String response = scanner.nextLine();
 
             if (response.equalsIgnoreCase("N")) north.north(name, hero, heroAttackPoints, heroHealthPoints, potions);
-            else if (response.equalsIgnoreCase("S")) south.south(name);
+            else if (response.equalsIgnoreCase("S")) south.south(name, hero, heroAttackPoints, heroHealthPoints, potions);
             else if (response.equalsIgnoreCase("E")) east.east(name);
             else if (response.equalsIgnoreCase("W")) west.west(name);
             else System.out.println("please enter a valid response");
