@@ -47,7 +47,7 @@ public class Main {
         }
         System.out.println("You have chosen to be a " + hero + ", which starts with " +  heroAttackPoints + " attack, and has " + heroHealthPoints + " health points and holds " + potions + " potions, go bravely on your quest!!!");
 
-
+        // asking the player if they are ready to start
         System.out.println(name + " are you ready to start your journey?[y/n]");
         String res = scanner.nextLine();
         if(res.equalsIgnoreCase("y")) {
@@ -56,9 +56,6 @@ public class Main {
         } else {
             System.out.println("maybe next time!");
         }
-
-
-
 
     }
 }
