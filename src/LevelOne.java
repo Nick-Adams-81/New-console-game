@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class LevelOne {
 
-    public void levelOne(String name) {
+    public void levelOne(String name, String hero, int heroAttackPoints, int heroHealthPoints, int potions) {
         North north = new North();
         South south = new South();
         East east = new East();
@@ -19,7 +19,7 @@ public class LevelOne {
             System.out.println(name + ", You start your journey at a crossroads, you can go north, south, east, or west, which way will you go?[N/S/E/W]");
             String response = scanner.nextLine();
 
-            if (response.equalsIgnoreCase("N")) north.north(name);
+            if (response.equalsIgnoreCase("N")) north.north(name, hero, heroAttackPoints, heroHealthPoints, potions);
             else if (response.equalsIgnoreCase("S")) south.south(name);
             else if (response.equalsIgnoreCase("E")) east.east(name);
             else if (response.equalsIgnoreCase("W")) west.west(name);
