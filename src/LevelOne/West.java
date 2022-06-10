@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class West {
 
     public void west(String name, String hero, int heroHealthPoints, int heroAttackPoints, int potions) {
+
+        Witch witch = new Witch();
         Scanner scanner = new Scanner(System.in);
         System.out.println(name + ", heading to the eternal land of the West holds promise, but don't be fooled by it's allure, there is much danger ahead...");
         System.out.println(hero + " " + heroHealthPoints + " " + heroAttackPoints + " " + potions);
@@ -26,6 +28,10 @@ public class West {
             System.out.println("You have surrendered 25% of your health, your health is now " + heroHealthPoints);
         } else {
             System.out.println("please input either a or b...");
+        }
+        if(hero.equalsIgnoreCase("Valkyrie")) {
+            System.out.println(witch.wickedWitch());
+            System.out.println("Just try and stay out of my way. Just try! I'll get you, my pretty, and your little dog, too!!!");
         }
     }
 }

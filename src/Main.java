@@ -17,6 +17,7 @@ public class Main {
         // new instances of level classes
         LevelOneMain levelOne = new LevelOneMain();
         LevelTwoMain levelTwo = new LevelTwoMain();
+        Knight knight = new Knight();
 
         // intro asking user for their name
         String name = "";
@@ -33,6 +34,7 @@ public class Main {
         System.out.println("d: Winged Valkyrie, powerful vixen of the sky that has a lot of health and potions but little attack power");
         String heroResponse = scanner.nextLine();
         if(heroResponse.equalsIgnoreCase("a")) {
+            System.out.println(knight.knight());
             hero = "Knight";
             heroAttackPoints = 100;
             heroHealthPoints = 100;
