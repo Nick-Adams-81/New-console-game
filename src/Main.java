@@ -4,7 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // setting up hero health points
+        int heroHealthPoints = 100;
+
         // new instances of classes
+
         LevelOne levelOne = new LevelOne();
         LevelTwo levelTwo = new LevelTwo();
 

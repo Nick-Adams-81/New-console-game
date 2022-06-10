@@ -16,30 +16,25 @@ public class LevelOne {
         boolean confirm;
         Scanner scanner = new Scanner(System.in);
         do {
-        System.out.println(name + ", You start your journey at a crossroads, you can go north, south, east, or west, which way will you go?[N/S/E/W]");
-        String response = scanner.nextLine();
+            System.out.println(name + ", You start your journey at a crossroads, you can go north, south, east, or west, which way will you go?[N/S/E/W]");
+            String response = scanner.nextLine();
 
-            if (response.equalsIgnoreCase("N")) {
-                north.north(name);
-            } else if (response.equalsIgnoreCase("S")) {
-                south.south(name);
-            } else if (response.equalsIgnoreCase("E")) {
-                east.east(name);
-            } else if (response.equalsIgnoreCase("W")) {
-                west.west(name);
-            } else {
-                System.out.println("please enter a valid response");
-            }
+            if (response.equalsIgnoreCase("N")) north.north(name);
+            else if (response.equalsIgnoreCase("S")) south.south(name);
+            else if (response.equalsIgnoreCase("E")) east.east(name);
+            else if (response.equalsIgnoreCase("W")) west.west(name);
+            else System.out.println("please enter a valid response");
+
             System.out.println("try level one again?[y/n]");
             String res = scanner.nextLine();
-            if(res.equalsIgnoreCase("Y")) {
+            if (res.equalsIgnoreCase("Y")) {
                 confirm = true;
             } else {
                 confirm = false;
                 System.out.println("moving farther along your path!");
             }
 
-        } while(confirm);
+        } while (confirm);
 
     }
 }
