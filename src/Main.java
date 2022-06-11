@@ -7,14 +7,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // setting up hero health points
+        // initializing hero, hero health points, and potions
         String hero = "";
         int heroHealthPoints = 0;
         int heroAttackPoints = 0;
         int potions = 0;
-//        System.out.println(RandomInt.randomInt(1, 3));
 
-        // new instances of level classes
+        // new instances of classes
         LevelOneMain levelOne = new LevelOneMain();
         LevelTwoMain levelTwo = new LevelTwoMain();
         Knight knight = new Knight();
@@ -33,7 +32,7 @@ public class Main {
         System.out.println(name + ", tell me what type of hero you are, would you be a...");
         System.out.println("a: Noble Knight, balance of health, attack, and magic");
         System.out.println("b: Wise Mage, master of the magic arts but weaker attacks and decent health");
-        System.out.println("c: Ogre warrior, mighty attack and health but without magic");
+        System.out.println("c: Ogre Warrior, mighty attack and health but without magic");
         System.out.println("d: Winged Valkyrie, powerful vixen of the sky that has a lot of health and potions but little attack power");
         String heroResponse = scanner.nextLine();
         if(heroResponse.equalsIgnoreCase("a")) {
@@ -62,7 +61,7 @@ public class Main {
             heroHealthPoints = 130;
             potions = 3;
         }
-        System.out.println("You have chosen to be a " + hero + ", which starts with " +  heroAttackPoints + " attack, and has " + heroHealthPoints + " health points and holds " + potions + " potions, go bravely on your quest!!!");
+        System.out.println("You have chosen to be a " + hero + ", which starts with " +  heroAttackPoints + " attack, and has " + heroHealthPoints + " health points and has " + potions + " potions, go bravely on your quest!!!");
 
         // asking the player if they are ready to start
         System.out.println(name + " are you ready to start your journey?[y/n]");

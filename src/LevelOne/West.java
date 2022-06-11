@@ -8,6 +8,7 @@ public class West {
 
         Witch witch = new Witch();
         Scanner scanner = new Scanner(System.in);
+
         System.out.println(name + ", heading to the eternal land of the West holds promise, but don't be fooled by it's allure, there is much danger ahead...");
         System.out.println(hero + " " + heroHealthPoints + " " + heroAttackPoints + " " + potions);
         System.out.println("You see a friendly sprite along your journey west, as you approach the sprite tells you she can help you with your quest! \ncome closer to get your bonus!");
