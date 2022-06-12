@@ -22,6 +22,7 @@ public class East {
                 int enemyHealthPoints = 85;
                 heroAttackPoints = RandomInt.randomInt(10, 50);
 
+                // TODO: figure out why enemy health points are not adjusting correctly.
                 enemyHealthPoints -= heroAttackPoints;
                 heroHealthPoints -= enemyAttackPoints;
 
