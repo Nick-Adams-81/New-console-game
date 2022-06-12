@@ -14,16 +14,28 @@ public class South {
         int heads = 1;
         int tails = 2;
         int flip = 0;
+
         String response = scanner.nextLine();
-        if(response.equalsIgnoreCase("h")) {
-            flip = heads;
-        } else if(response.equalsIgnoreCase("t")) {
-            flip = tails;
-        } else {
-            System.out.println("pleasse enter either H or T");
-        }
+        if (response.equalsIgnoreCase("h")) flip = heads;
+        else if (response.equalsIgnoreCase("t")) flip = tails;
+        else System.out.println("please enter either H or T");
+
+
         int coinFlip = RandomInt.randomInt(1, 3);
         System.out.println(flip + " " + coinFlip);
+        if (flip == coinFlip) {
+            heroAttackPoints += 50;
+            heroHealthPoints += 50;
+            potions += 1;
+            System.out.println("Well done");
+            System.out.println(heroAttackPoints + " " + heroHealthPoints + " " + potions);
+        } else {
+            heroAttackPoints -= 50;
+            heroHealthPoints -= 50;
+            potions -= 1;
+            System.out.println("Bad luck friendo");
+            System.out.println(heroAttackPoints + " " + heroHealthPoints + " " + potions);
+        }
 
     }
 }
