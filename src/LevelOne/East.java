@@ -1,10 +1,11 @@
 package LevelOne;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class East {
 
-    public void east(String name, String hero, int heroHealthPoints, int potions) {
+    public void east(String name, String hero, int heroAttackPoints, int heroHealthPoints, int potions) {
         Scanner scanner = new Scanner(System.in);
 
 
@@ -19,17 +20,19 @@ public class East {
             do {
                 int enemyAttackPoints = RandomInt.randomInt(5, 20);
                 int enemyHealthPoints = 85;
-                int heroAttackPoints = RandomInt.randomInt(10, 50);
+                heroAttackPoints = RandomInt.randomInt(10, 50);
 
                 enemyHealthPoints -= heroAttackPoints;
                 heroHealthPoints -= enemyAttackPoints;
 
-                System.out.println("You attack and deal " + heroAttackPoints + " to your enemy, leaving him with " + enemyHealthPoints + ", he counter attack you, dealing " + heroHealthPoints + ", leaving you with " + heroHealthPoints);
+                System.out.println("You attack and deal " + heroAttackPoints + " to your enemy, leaving him with " + enemyHealthPoints + ", he counter attack you, dealing " + enemyAttackPoints + ", leaving you with " + heroHealthPoints);
 
                 if(heroHealthPoints <= 0) {
                     System.out.println(name + " you died!");
+                    break;
                 } else if(enemyHealthPoints <= 0) {
                     System.out.println(name + " You have defeated you adversary!");
+                    break;
                 }
                 System.out.println("What do you want to do now?");
                 System.out.println("a: continue the attack");

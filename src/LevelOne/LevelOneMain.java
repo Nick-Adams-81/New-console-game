@@ -20,7 +20,7 @@ public class LevelOneMain {
             // paths through the level
             if (response.equalsIgnoreCase("N")) north.north(name, hero, heroAttackPoints, heroHealthPoints, potions);
             else if (response.equalsIgnoreCase("S")) south.south(name, hero, heroAttackPoints, heroHealthPoints, potions);
-            else if (response.equalsIgnoreCase("E")) east.east(name, hero, heroHealthPoints, potions);
+            else if (response.equalsIgnoreCase("E")) east.east(name, hero, heroAttackPoints, heroHealthPoints, potions);
             else if (response.equalsIgnoreCase("W")) west.west(name, hero, heroAttackPoints, heroHealthPoints, potions);
             else System.out.println("please enter a valid response");
 
