@@ -25,7 +25,7 @@ public class LevelOneMain {
             else System.out.println("please enter a valid response");
 
             // boss fight
-            bossFight.bossFight();
+            bossFight.bossFight(name, hero, heroAttackPoints, heroHealthPoints, potions);
 
             System.out.println("try level one again?[y/n]");
             String res = scanner.nextLine();

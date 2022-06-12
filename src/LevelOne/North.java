@@ -7,6 +7,7 @@ public class North {
 
     public void north(String name, String hero, int heroAttackPoints, int heroHealthPoints, int potions) {
         Scanner scanner = new Scanner(System.in);
+        LevelOneBossFight bossFight = new LevelOneBossFight();
         System.out.println(name + ", you have decided to go north");
         System.out.println(name + " " + hero + " " + heroHealthPoints + " " + heroAttackPoints + " " + potions);
         System.out.println("You travel north through a dense forest, you arrive upon a little man with a funny cap, he tells you he can increase your health and attack if you can answer his riddle in three guesses or less, \nbut if you can not answer it correctly it will take away from your attack and health, there is no turning back so guess well!");
@@ -30,6 +31,8 @@ public class North {
             heroAttackPoints -= 15;
             System.out.println("You failed! your health is now:" + heroHealthPoints + ", and your attack is now:" + heroAttackPoints + ", better luck on the rest of your journey!");
         }
+
+        bossFight.bossFight(name, hero, heroAttackPoints, heroHealthPoints, potions);
 
     }
 }
