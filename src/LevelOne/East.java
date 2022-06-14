@@ -26,6 +26,7 @@ public class East {
                 enemyHealthPoints -= heroAttackPoints;
                 heroHealthPoints -= enemyAttackPoints;
 
+                // reading out the last attack results
                 System.out.println("You attack and deal " + heroAttackPoints + " to your enemy, leaving him with " + enemyHealthPoints + ", he counter attack you, dealing " + enemyAttackPoints + ", leaving you with " + heroHealthPoints);
 
                 if(heroHealthPoints <= 0) {
